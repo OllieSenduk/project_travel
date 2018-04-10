@@ -1,0 +1,14 @@
+// variables & fonts
+@import "config/colors.scss";
+@import "config/fonts";
+
+// Base styles
+@import "base.scss";
+@import "components/footer.scss";
+@import "components/sidebar.scss";
+
+// home page
+@import "components/home__articles.scss";
+@import "components/home__features.scss";
+@import "components/home__header.scss";
+@import "components/home__trips.scss";
