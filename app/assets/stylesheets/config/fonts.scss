@@ -1,5 +1,5 @@
  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
- @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400|Nunito:300,300i');
+ @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,800|Nunito:300,300i');
 /*
  * libre baskerville
 ================================================================================ */
@@ -152,9 +152,10 @@
    font-style: normal;
    font-weight: normal;
 }
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
 
-// Define fonts for body and headers
-$font-primary: 'librebaskerville-regular', sans-serif;
-$font-display: 'metropolis-black', sans-serif;
+
 
 /*# sourceMappingURL=fonts.css.map */
