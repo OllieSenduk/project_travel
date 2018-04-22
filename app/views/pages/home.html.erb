@@ -37,8 +37,6 @@
     <p class="home__story__content__text mb-lg">Lorem ipsum, it is amazing.Lorem ipsum, it is amazing.Lorem ipsum, it is amazing.Lorem ipsum, it is amazing.</p>
     <button class="btn-action"> Book a trip</button>
   </div>
-</section>
-
 
   <section class="home__trips">
     <% @trips.each do |trip| %>
@@ -61,25 +59,25 @@
           <svg>
             <%= inline_svg("activity.svg") %>">
           </svg>
-          <p> trip.location</p>
+          <p> trip.activity</p>
         </div>
 
         <div class="home__trip_rating">
           <svg>
             <%= inline_svg("rating.svg") %>">
           </svg>
-          <p> trip.location</p>
+          <p> trip.rating</p>
         </div>
 
         <div class="home__trip_transport">
           <svg>
             <%= inline_svg("transport.svg") %>">
           </svg>
-          <p> trip.location</p>
+          <p> trip.transport</p>
         </div>
-      </div>
+        <button class="btn-action home__trip_btn"> Book this trip</button>
 
-      <button class="btn home__trip_btn"></button>
+      </div>
     <% end %>
   </section>
 
