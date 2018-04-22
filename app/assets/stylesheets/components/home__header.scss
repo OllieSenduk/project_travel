@@ -1,7 +1,11 @@
 .home__header__main {
   background-color: $color-grey-light-1;
+  grid-column: full-start / col-end 6;
+  grid-row: 1;
 }
 
 .home__header__sub {
-  background-color: $color-primary-dark
+  background-color: $color-primary-dark;
+  grid-column: col-start 7 / full-end;
+  grid-row: 1;
 }
