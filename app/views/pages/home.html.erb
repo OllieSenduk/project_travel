@@ -37,17 +37,62 @@
     <p class="home__story__content__text mb-lg">Lorem ipsum, it is amazing.Lorem ipsum, it is amazing.Lorem ipsum, it is amazing.Lorem ipsum, it is amazing.</p>
     <button class="btn-action"> Book a trip</button>
   </div>
+</section>
 
 
   <section class="home__trips">
-    Trips
+    <% @trips.each do |trip| %>
+    <div class="home__trip">
+      <%= image_tag("story_background_image.jpg", class: "home__trip_image") %>
+        <svg class="home__trip_like">
+          <%= inline_svg("like.svg") %>
+        </svg>
+
+        <h5 class="home__trip_name"><%= trip %></h5>
+
+        <div class="home__trip_location">
+          <svg>
+            <%= inline_svg("location.svg") %>">
+          </svg>
+          <p> trip.location</p>
+        </div>
+
+        <div class="home__trip_activity">
+          <svg>
+            <%= inline_svg("activity.svg") %>">
+          </svg>
+          <p> trip.location</p>
+        </div>
+
+        <div class="home__trip_rating">
+          <svg>
+            <%= inline_svg("rating.svg") %>">
+          </svg>
+          <p> trip.location</p>
+        </div>
+
+        <div class="home__trip_transport">
+          <svg>
+            <%= inline_svg("transport.svg") %>">
+          </svg>
+          <p> trip.location</p>
+        </div>
+      </div>
+
+      <button class="btn home__trip_btn"></button>
+    <% end %>
   </section>
+
+
+
 
   <section class="home__articles">
     Articles
+
   </section>
 
   <footer class="footer">
     Footer
+
   </footer>
 </section>
