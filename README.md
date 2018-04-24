@@ -1,5 +1,11 @@
 Our newest app
 
+#TODO
+styling:
+- forms
+- flash messages
+
+
 commands:
 
 1. do a codecheck:
