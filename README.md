@@ -1,24 +1,31 @@
-# README
+Our newest app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+commands:
 
-Things you may want to cover:
+1. do a codecheck:
+    bundle exec rails_best_practices .
 
-* Ruby version
+Running tests:
+# Run only model specs
+bundle exec rspec spec/models
 
-* System dependencies
+# Run only specs for AccountsController
+bundle exec rspec spec/controllers/accounts_controller_spec.rb
 
-* Configuration
+# Run only spec on line 8 of AccountsController
+bundle exec rspec spec/controllers/accounts_controller_spec.rb:8
+rails generate rspec:model widget
+will create a new spec file in spec/models/widget_spec.rb.
 
-* Database creation
+The same generator pattern is available for all specs:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+scaffold
+model
+controller
+helper
+view
+mailer
+observer
+integration
+feature
+job

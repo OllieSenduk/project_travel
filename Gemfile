@@ -24,10 +24,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Added gems
+
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'money-rails', '~>1'
+gem "rails_best_practices"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -35,12 +41,18 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'bullet'
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'simplecov', require: false, group: :test
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

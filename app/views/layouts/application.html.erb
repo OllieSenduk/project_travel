@@ -7,12 +7,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script type="text/javascript" src="//cdn.rawgit.com/icons8/bower-webicon/v0.10.7/angular-webicon.min.js"></script>
-
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
+    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>
