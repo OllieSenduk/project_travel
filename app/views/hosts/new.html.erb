@@ -1,0 +1,15 @@
+<%= simple_form_for(@host) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :speciality, collection: Host.specialities.keys.to_a %>
+  <%= f.input :age %>
+  <%= f.input :phone_number, placeholder: '+31642240312' %>
+  <%= f.input :address %>
+  <%= f.input :postal_code %>
+  <%= f.input :city %>
+  <%= f.input :country, as: :text %>
+
+  <%= f.file_field :images, multiple: true, direct_upload: true %>
+
+  <%= f.button :submit %>
+<% end %>

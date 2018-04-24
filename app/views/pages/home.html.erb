@@ -1,6 +1,14 @@
 <section class="home-container">
   <header class="home__header__main">
     Header
+    <% if @user.image.attached? %>
+<!-- @post.image.present? will always return true, use attached? to check presence -->
+    <p>
+      <strong>Image:</strong>
+      <br>
+      <%= image_tag @user.image %>
+    </p>
+  <% end %>
   </header>
   <div class="home__header__sub">
   Header Sub

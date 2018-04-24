@@ -1,0 +1,10 @@
+<h1>I'm the show page</h1>
+<% if @host.images.attached? %>
+<p>
+  <strong>Images:</strong>
+  <br>
+  <% @host.images.each do |image| %>
+  <%= image_tag image.variant(resize: "500x500", monochrome: true) %>
+  <% end %>
+</p>
+<% end %>
