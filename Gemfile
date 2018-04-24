@@ -32,6 +32,7 @@ gem "rails_best_practices"
 gem 'devise'
 gem 'figaro'
 gem 'rolify'
+gem 'faker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
