@@ -1,13 +1,24 @@
 .home__story {
   &__content {
     grid-column: col-start 5 / full-end;
-    grid-row: 3;
+
     padding: 6rem 8vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+
+        /*
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        */
+
+      display: grid;
+      align-content: center;
+      justify-items: start;
+
+      @media only screen and (max-width: $bp-medium) {
+          grid-column: 1 / -1;
+      }
+    }
 
   &__content__text {
     font-size: 1.5rem;
